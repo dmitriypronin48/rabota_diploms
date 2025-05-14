@@ -86,8 +86,13 @@ export GNOME_SHELL_SESSION_MODE=ubuntu
 export XDG_CURRENT_DESKTOP=ubuntu:GNOME
 ```
 
+systemctl status xrdp-sesman (проверка оболочки графики)
+systemctl status xrdp (статус работы сервера xrdp)
 
 
-
-
-systemctl status xrdp-sesman (проверка оболочки)
+Настройка журнала логов
+nano /etc/systemd/journald.conf
+```
+SystemMaxUse=500M    # Максимальный размер логов
+MaxRetentionSec=1month  # Хранить логи 1 месяц
+```
