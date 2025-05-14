@@ -57,6 +57,13 @@ add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode
 apt update
 apt install code
 ```
+
+Для андроида ставим 
+```
+apt install snapd
+snap install android-studio --classic
+```
+
 8. СУБД
 Выбираем PostgreSQL
 Преимущества:
