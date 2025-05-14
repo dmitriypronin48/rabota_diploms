@@ -74,6 +74,8 @@ apt install cups-pdf
 Для проверки работы можно открыть LibreOfice и тыкнуть распечатать.
 Файл pdf сохраниться в /home/ваш_пользователь/PDF
 
+-----
+
 Настройка удаленного стола:
 ```
 apt install xrdp
@@ -89,10 +91,35 @@ export XDG_CURRENT_DESKTOP=ubuntu:GNOME
 systemctl status xrdp-sesman (проверка оболочки графики)
 systemctl status xrdp (статус работы сервера xrdp)
 
-
+-----
 Настройка журнала логов
 nano /etc/systemd/journald.conf
 ```
 SystemMaxUse=500M    # Максимальный размер логов
 MaxRetentionSec=1month  # Хранить логи 1 месяц
 ```
+-----
+
+Создание группы
+```
+groupadd officeusers
+```
+
+Добавление пользователя в группу
+```
+usermod -aG officeusers username1
+```
+
+Находим путь к LibreOffice
+```
+which libreoffice
+```
+
+Даём группе право на исполнение:
+```
+sudo chown :officeusers /usr/bin/libreoffice
+sudo chmod 750 /usr/bin/libreoffice
+```
+
+
+
