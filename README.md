@@ -100,6 +100,11 @@ MaxRetentionSec=1month  # Хранить логи 1 месяц
 ```
 -----
 
+Создаем пользователя
+```
+adduser username1
+```
+
 Создание группы
 ```
 groupadd officeusers
@@ -109,6 +114,12 @@ groupadd officeusers
 ```
 usermod -aG officeusers username1
 ```
+
+Проверим что пользователь добавлен в группу
+```
+groups username1
+```
+
 
 Находим путь к LibreOffice
 ```
