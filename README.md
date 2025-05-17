@@ -4,10 +4,10 @@
 -----
 2. графический редактор  
 ```
-GIMP - apt install gimp
-inkscape - apt install inkscape
-Вместо КОМПАС-3D берем, freecad, так как он более лучше и мощней, плюс менее прожорлив к ресурсам. -  apt install freecad
-Вместо 3D-Paint берем blender, лучше, гибче и больше возможностей, менее прожорлив -  apt install blender
+GIMP - apt install gimp -y
+inkscape - apt install inkscape -y
+Вместо КОМПАС-3D берем, freecad, так как он более лучше и мощней, плюс менее прожорлив к ресурсам. -  apt install freecad -y
+Вместо 3D-Paint берем blender, лучше, гибче и больше возможностей, менее прожорлив -  apt install blender -y
 NanoCAD нет смысла устанавливать, так как все те же функции выполняет и freecad
 ```
 -----
